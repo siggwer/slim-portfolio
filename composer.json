@@ -4,12 +4,16 @@
     "minimum-stability": "stable",
     "require": {
         "slim/slim": "^3.0",
-        "slim/twig-view": "^2.4"
+        "slim/twig-view": "^2.4",
+        "swiftmailer/swiftmailer": "^6.0",
+        "respect/validation": "^1.1",
+        "slim/csrf": "^0.7.0",
+        "juliangut/slim-php-di": "^2.1"
     },
     "autoload":{
         "PSR4": {
-            "App\\": "src/",
-            "Framework\\": "etc/"
+            "App\\": "app/",
+            "Framework\\": "src/"
         }
     }
 }
