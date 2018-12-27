@@ -2,21 +2,17 @@
 
 namespace App\Controller;
 
-class HomeController
+use Framework\Controller;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
+
+class HomeController extends Controller
 {
     /**
-     * @var $home
+     * @param RequestInterface $request
+     * @param ResponseInterface $response
      */
-    private $home;
-
-    /**
-     * HomeController constructor.
-     */
-    public function __construct(){
-        $this->home = $home;
-    }
-
-    public function __invoke(){
-
+    public function home(RequestInterface $request, ResponseInterface $response) {
+        $this->render($response, '../../Views/Home/home.twig');
     }
 }

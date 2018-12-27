@@ -11,7 +11,7 @@
         "juliangut/slim-php-di": "^2.1"
     },
     "autoload":{
-        "PSR4": {
+        "psr-4": {
             "App\\": "app/",
             "Framework\\": "src/"
         }
